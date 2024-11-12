@@ -14,8 +14,13 @@
       </div>
     </div>
 
-    <div class="row">
-      <highlightjs language="json" :code="JSON.stringify(user, null, 2)" />
+    <div class="card-profile">
+<!--      <highlightjs language="json" :code="JSON.stringify(user, null, 2)" />-->
+      <p>Prénom : {{user?.given_name}}</p>
+      <p>Nom : {{user?.family_name}}</p>
+      <p>Nickname : {{user?.nickname}}</p>
+      <p>Name : {{user?.name}}</p>
+      <p>Email : {{user?.email}}</p>
     </div>
   </div>
 </template>
@@ -35,3 +40,22 @@ export default {
 };
 </script>
 
+<style scoped>
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 100%;
+  max-width: 200px;
+}
+
+.card-profile {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+</style>
