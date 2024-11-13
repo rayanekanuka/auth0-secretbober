@@ -1,5 +1,5 @@
 <template>
-  <img src="public/lights.gif" alt="christmas-lights" id="christmas-lights">
+  <img src="/lights.gif" alt="christmas-lights" id="christmas-lights">
   <div id="app" class="d-flex flex-column h-100">
     <nav-bar />
     <div class="container flex-grow-1">
